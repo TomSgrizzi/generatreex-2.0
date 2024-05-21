@@ -45,6 +45,7 @@ You can click on __Autofill__ to automatically fill in all the fields with an ex
 + `east` ➡️
 + `south` ⬇️
 + `west` ⬅️
+
 And they must be entered following the same pattern of the node labels. For instance: `DP2,T` will be paired with `north,south` if you want the line exiting DP from the upper side of the node and arriving to T from below.
 
 8. **Download**: Once you click __submit__ the tree diagram is displayed, and you will access the PDF file, the LaTeX code, and the PNG transparent file.
