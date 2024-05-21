@@ -246,7 +246,7 @@ def submit():
            
             # Example usage:
             pdf_path = 'document.pdf'
-            output_path = 'C:/Users/tomma/Py projects/generatreex 2.0/static/download/css/output-1.png'
+            output_path = 'static/download/css/output-1.png'
             pdf_to_transparent_image(pdf_path, output_path, zoom_factor=4.0)  # Increase the zoom factor to increase resolution
 
             with Image.open(output_path) as img:
@@ -652,7 +652,7 @@ def submit():
             
                 # Example usage:
                 pdf_path = 'document.pdf'
-                output_path = 'C:/Users/tomma/Py projects/generatreex 2.0/static/download/css/output-1.png'
+                output_path = 'static/download/css/output-1.png'
                 pdf_to_transparent_image(pdf_path, output_path, zoom_factor=4.0)  # Increase the zoom factor to increase resolution
 
                 with Image.open(output_path) as img:
@@ -829,7 +829,7 @@ def submit():
             
                 # Example usage:
                 pdf_path = 'document.pdf'
-                output_path = 'C:/Users/tomma/Py projects/generatreex 2.0/static/download/css/output-1.png'
+                output_path = 'static/download/css/output-1.png'
                 pdf_to_transparent_image(pdf_path, output_path, zoom_factor=4.0)  # Increase the zoom factor to increase resolution
 
                 with Image.open(output_path) as img:
