@@ -1,4 +1,4 @@
-waitress==2.0.0
+waitress
 fitz==0.0.1.dev2
 Flask==3.0.3
 matplotlib==3.8.0
