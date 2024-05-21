@@ -28,8 +28,8 @@ def index():
 
 @app.route('/submit', methods=['POST'])
 def submit():
-    output_png_path = os.path.join(app.static_folder, 'download\css\output-1.png')
-    output_png_mobile_path =os.path.join(app.static_folder, 'download-mobile\css\output-1.png')
+    output_png_path = os.path.join(app.static_folder, 'download/css/output-1.png')
+    output_png_mobile_path =os.path.join(app.static_folder, 'download-mobile/css/output-1.png')
 
     # Check if the file exists and delete it
     if os.path.exists(output_png_path):
@@ -292,10 +292,10 @@ def submit():
 
             print(f"PNG Width after resizing: {width}, Height: {height}")
 
-            source_file = os.path.join(app.root_path, 'static\download\css', 'output-1.png')
+            source_file = os.path.join(app.root_path, 'static/download/css', 'output-1.png')
     
             # Define the destination directory
-            destination_folder = os.path.join(app.root_path, 'static\download-mobile\css')
+            destination_folder = os.path.join(app.root_path, 'static/download-mobile/css')
             
             # Ensure the destination folder exists
             if not os.path.exists(destination_folder):
@@ -697,10 +697,10 @@ def submit():
 
                 print(f"PNG Width after resizing: {width}, Height: {height}")
 
-                source_file = os.path.join(app.root_path, 'static\download\css', 'output-1.png')
+                source_file = os.path.join(app.root_path, 'static/download/css', 'output-1.png')
     
                 # Define the destination directory
-                destination_folder = os.path.join(app.root_path, 'static\download-mobile\css')
+                destination_folder = os.path.join(app.root_path, 'static/download-mobile/css')
                 
                 # Ensure the destination folder exists
                 if not os.path.exists(destination_folder):
@@ -873,10 +873,10 @@ def submit():
 
                 print(f"PNG Width after resizing: {width}, Height: {height}")
 
-                source_file = os.path.join(app.root_path, 'static\download\css', 'output-1.png')
+                source_file = os.path.join(app.root_path, 'static/download/css', 'output-1.png')
     
                 # Define the destination directory
-                destination_folder = os.path.join(app.root_path, 'static\download-mobile\css')
+                destination_folder = os.path.join(app.root_path, 'static/download-mobile/css')
                 
                 # Ensure the destination folder exists
                 if not os.path.exists(destination_folder):
@@ -932,7 +932,7 @@ def get_pdf():
 def get_png():
     # This route is responsible for actually serving the PDF file
     try:
-        png_path = session.get('output_path', 'static\download\css\output-1.png')  # Fallback to 'document.pdf' if not set
+        png_path = session.get('output_path', 'static/download/css/output-1.png')  # Fallback to 'document.pdf' if not set
         print("PNG file fetched for download")
         return send_file(png_path, as_attachment=True)
     except FileNotFoundError:
