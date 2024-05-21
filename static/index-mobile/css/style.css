@@ -1,9 +1,4 @@
-html, body {
-   /* height: 100%; Ensure at least the min-height covers the full viewport height */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  background-color: #f0f0f0; /* Your desired background color */
-}
+
 
 .iphone {
   background-color: #f0f0f0;
