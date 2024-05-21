@@ -36,11 +36,11 @@ You can click on __Autofill__ to automatically fill in all the fields with an ex
 
 1. **Structure Input**: Enter your syntactic structure in the provided text area using the in-line notation format.
 
-4. **Movement lines**: You will be asked to select how many movement lines you want to represent (default is 0).
+2. **Movement lines**: You will be asked to select how many movement lines you want to represent (default is 0).
 
-5. **Node Labels**: If you choose to add movement lines, you will have to submit pairs of node labels that you wish to connect with movement lines. The probes will go in the _from_ input field, and the respective goals will go in the _to_ input field, separated by a comma: `DP1, DP2`. For instance: if you want a line connecting `DP1 -> DP2`, and a line connecting `V -> T`, you will have to enter `DP1,V` into _from_ and `DP2,T` into _to_.
+3. **Node Labels**: If you choose to add movement lines, you will have to submit pairs of node labels that you wish to connect with movement lines. The probes will go in the _from_ input field, and the respective goals will go in the _to_ input field, separated by a comma: `DP1, DP2`. For instance: if you want a line connecting `DP1 -> DP2`, and a line connecting `V -> T`, you will have to enter `DP1,V` into _from_ and `DP2,T` into _to_.
 
-6. **Movement Directions (optional)**: In addition to the node labels you may specify what directions will take the lines both when exiting their origin node and when they enter their landing node. If you do not provide an equal number of directions for both output and input directions GeneraTreeX will automatically compute the standard ones. These are the following parameters accepted:
+4. **Movement Directions (optional)**: In addition to the node labels you may specify what directions will take the lines both when exiting their origin node and when they enter their landing node. If you do not provide an equal number of directions for both output and input directions GeneraTreeX will automatically compute the standard ones. These are the following parameters accepted:
 + `north` ⬆️
 + `east` ➡️
 + `south` ⬇️
@@ -48,7 +48,7 @@ You can click on __Autofill__ to automatically fill in all the fields with an ex
 
 And they must be entered following the same pattern of the node labels. For instance: `DP2,T` will be paired with `north,south` if you want the line exiting DP from the upper side of the node and arriving to T from below.
 
-8. **Download**: Once you click __submit__ the tree diagram is displayed, and you will access the PDF file, the LaTeX code, and the PNG transparent file.
+5. **Download**: Once you click __submit__ the tree diagram is displayed, and you will access the PDF file, the LaTeX code, and the PNG transparent file.
 
 ## Error Handling
 
