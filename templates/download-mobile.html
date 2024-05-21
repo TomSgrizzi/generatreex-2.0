@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='download-mobile/css/globals.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='download-mobile/css/styleguide.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='download-mobile/css/style.css') }}" />
+  </head>
+  <body>
+    <div class="iphone iphone-wrapper">
+      <div class="div">
+        <div class="overlap">
+          <img class="github-logo" src="static/download-mobile/img/github-logo-1.png" />
+          <header class="header">
+            <div class="menu">
+              <div class="white-normal"><div class="sign-up">by Tommaso Sgrizzi</div></div>
+            </div>
+          </header>
+          <div class="black-normal"><div class="text-wrapper">Guide</div></div>
+        </div>
+        <div class="overlap-group">
+          <div class="frame">
+            <div class="always-track-analy-wrapper">
+              <p class="always-track-analy">
+                <span class="span">Genera</span><span class="text-wrapper-2">treeX</span>
+              </p>
+            </div>
+            <div class="group">
+              <div class="white-normal-wrapper">
+                <form id="myForm" action="/submit" method="post">
+                  <input type="text" class="sign-up-wrapper" name="structure" placeholder="e.g. [TP [DP] [T’ [T] [vP [DP2] [VP]]]]"/>
+                      <select name="movement_lines" class="dropdown-parent">
+                        <option value="0" selected>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <!-- Add more options as needed -->
+                      </select>
+                      <div class="div-wrapper"><input type="text" class="sign-up-fromnodes" name="from_nodes" placeholder="Enter nodes..."/></div>
+                      <div class="overlap-2"><input type="text" class="sign-up-to-nodes" name="to_nodes" placeholder="Enter nodes..."/></div>
+                      <div class="overlap-3"><input type="text" class="sign-up-directionout" name="direction_out" placeholder="Enter directions..."/></div>
+                      <div class="overlap-group-2"><input type="text" class="sign-up-directionin" name="direction_in" placeholder="Enter directions..."/></div>
+                      <div class="flashes-container">
+                        {% with messages = get_flashed_messages(category_filter=["error_empty_structure"]) %}
+                          {% if messages %}
+                            <ul class="flashes">
+                            {% for message in messages %}
+                              <li>{{ message }}</li>
+                            {% endfor %}
+                            </ul>
+                          {% endif %}
+                        {% endwith %}
+                        {% with messages = get_flashed_messages(category_filter=["error_squared_beginning"]) %}
+                          {% if messages %}
+                            <ul class="flashes">
+                            {% for message in messages %}
+                              <li>{{ message }}</li>
+                            {% endfor %}
+                            </ul>
+                          {% endif %}
+                        {% endwith %}
+                        {% with messages = get_flashed_messages(category_filter=["error_bracketing"]) %}
+                          {% if messages %}
+                            <ul class="flashes">
+                            {% for message in messages %}
+                              <li>{{ message }}</li>
+                            {% endfor %}
+                            </ul>
+                          {% endif %}
+                        {% endwith %}
+                        {% with messages = get_flashed_messages(category_filter=["error_probe_goal_count"]) %}
+                          {% if messages %}
+                            <ul class="flashes">
+                            {% for message in messages %}
+                              <li>{{ message }}</li>
+                            {% endfor %}
+                            </ul>
+                          {% endif %}
+                        {% endwith %}
+                        {% with messages = get_flashed_messages(category_filter=["error_goal_count"]) %}
+                          {% if messages %}
+                            <ul class="flashes">
+                            {% for message in messages %}
+                              <li>{{ message }}</li>
+                            {% endfor %}
+                            </ul>
+                          {% endif %}
+                        {% endwith %}
+                        {% with messages = get_flashed_messages(category_filter=["error_probe_count"]) %}
+                          {% if messages %}
+                            <ul class="flashes">
+                            {% for message in messages %}
+                              <li>{{ message }}</li>
+                            {% endfor %}
+                            </ul>
+                          {% endif %}
+                        {% endwith %}
+                        {% with messages = get_flashed_messages(category_filter=["error_direction_count"]) %}
+                          {% if messages %}
+                            <ul class="flashes">
+                            {% for message in messages %}
+                              <li>{{ message }}</li>
+                            {% endfor %}
+                            </ul>
+                          {% endif %}
+                        {% endwith %}
+                        {% with messages = get_flashed_messages(category_filter=["error_input_count"]) %}
+                          {% if messages %}
+                            <ul class="flashes">
+                            {% for message in messages %}
+                              <li>{{ message }}</li>
+                            {% endfor %}
+                            </ul>
+                          {% endif %}
+                        {% endwith %}
+                        {% with messages = get_flashed_messages(category_filter=["error_output_count"]) %}
+                          {% if messages %}
+                            <ul class="flashes">
+                            {% for message in messages %}
+                              <li>{{ message }}</li>
+                            {% endfor %}
+                            </ul>
+                          {% endif %}
+                        {% endwith %}
+                        {% with messages = get_flashed_messages(category_filter=["error_pdf_generation"]) %}
+                          {% if messages %}
+                            <ul class="flashes">
+                            {% for message in messages %}
+                              <li>{{ message }}</li>
+                            {% endfor %}
+                            </ul>
+                          {% endif %}
+                        {% endwith %}
+                        {% with messages = get_flashed_messages(category_filter=["error_timeout"]) %}
+                          {% if messages %}
+                            <ul class="flashes">
+                            {% for message in messages %}
+                              <li>{{ message }}</li>
+                            {% endfor %}
+                            </ul>
+                          {% endif %}
+                        {% endwith %}
+                      </div>
+                      <button type="submit" class="black-normal-3" id="submitBtn">
+                        <div class="sign-up-10">Submit</div>
+                      </button>
+                      
+                      <div class="black-normal-wrapper">
+                        <div class="black-normal-2"><button type="button" class="sign-up-autofill" onclick="autofill()">Autofill</button></div>
+                      </div>
+                     </form>
+
+
+              </div>
+            </div>
+            <div class="sign-up-2">Enter your structure:</div>
+            <p class="sign-up-3">How many movement lines do you want to draw?</p>
+            <div class="sign-up-4">From:</div>
+            
+            
+            <div class="sign-up-6">To:</div>
+            
+            <div class="sign-up-7">Output direction:</div>
+            
+            <div class="sign-up-8">Input direction:</div>
+       
+   
+          </div>
+          <p class="a-better-way-to-mana">A quick way to generate syntactic trees from in-line notation ✨</p>
+        </div>
+        <div class="overlap-4">
+          <div class="group-2">
+            <div class="group-wrapper">
+              <div class="group-3">
+                <div class="black-normal-4"><a href="{{ url_for('get_png') }}"><div class="sign-up-11">Download png</div></a></div>
+              </div>
+            </div>
+            <div class="group-4">
+              <div class="black-normal-5"><a href="{{ url_for('get_pdf') }}"><div class="sign-up-12">Download pdf</div></div></a>
+            </div>
+            <div class="a-better-way-to-mana-2">🎉 Done! 🎉</div>
+          </div>
+          <div class="black-normal-6"> <a href="{{ url_for('show_latex') }}" target="_blank" ><div class="sign-up-13">Show LaTeX code</div></a></div>
+        </div>
+        <div class="rectangle"></div>
+      </div>
+    </div>
+    <div class="iphone element-wrapper">
+      <div class="element">
+        <div class="overlap-5">
+          <div class="element-CTA">
+            <div class="overlap-6">
+              <div class="frame-2">
+                <div class="frame-3">
+                  <p class="always-track-analy-2">
+                    <span class="text-wrapper-4">Genera</span> <span class="text-wrapper-5">treeX</span>
+                  </p>
+                </div>
+                <div class="group-5">
+                  <div class="group-6">
+                    <div class="white-normal-2"><p class="sign-up-14">e.g. [TP [DP] [T’ [T] [vP [DP2] [VP]]]]</p></div>
+                  </div>
+                  <div id="loadingMessage" style="display: none;">Loading...</div> 
+                </div>
+                <div class="sign-up-15">Enter your structure:</div>
+                <p class="sign-up-16">How many movement lines do you want to draw?</p>
+                <div class="sign-up-17">From:</div>
+                <div class="dropdown-parent-2">
+                  <div class="joined-text-arrow-wrapper">
+                    <div class="joined-text-arrow-2">
+                      <div class="dropdown-parent-3">0</div>
+                      <img class="img" src="img/down-arrow-states-1.svg" />
+                    </div>
+                  </div>
+                </div>
+                <div class="overlap-7"><div class="sign-up-18">Enter node label...</div></div>
+                <div class="sign-up-19">To:</div>
+                <div class="overlap-8"><div class="sign-up-18">Enter node label...</div></div>
+                <div class="sign-up-20">Output direction:</div>
+                <div class="overlap-9"><div class="sign-up-18">Enter direction...</div></div>
+                <div class="sign-up-21">Input direction:</div>
+                <div class="overlap-10"><div class="sign-up-18">Enter direction...</div></div>
+                <div class="overlap-group-3">
+                  <div class="group-7">
+                    <div class="group-8">
+                      <div class="group-6">
+                        <div class="black-normal-7"><div class="sign-up-22">Reset values</div></div>
+                      </div>
+                    </div>
+                    
+                    </div>                    
+                    <div class="a-better-way-to-mana-3">🎉 Done! 🎉</div>
+                  </div>
+                  <div class="group-10">
+                    <div class="black-normal-7"><div class="sign-up-22">Show LaTeX code</div></div>
+                  </div>
+                </div>
+                <div class="group-11">
+                  <div class="black-normal-8"><div class="sign-up-23">Autofill</div></div>
+                </div>
+              </div>
+              <p class="a-better-way-to-mana-4">A quick way to generate syntactic trees from in-line notation ✨</p>
+            </div>
+          </div>
+          <div class="black-normal-9"><div class="sign-up-23">Submit</div></div>
+          <div class="rectangle-2"></div>
+        </div>
+        <div class="overlap-11">
+          <img class="github-logo-2" src="{{ url_for('static', filename='download-mobile/img/github-logo-1-1.png') }}" />
+          <header class="header-2">
+            <div class="menu-2">
+              <div class="white-normal-3"><div class="sign-up-24">by Tommaso Sgrizzi</div></div>
+            </div>
+          </header>
+          <div class="black-normal-10"><div class="sign-up-25">Guide</div></div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+        var submitBtn = document.getElementById('submitBtn');
+        var form = document.getElementById('myForm');
+        var loadingMessage = document.getElementById('loadingMessage');
+      
+        if (submitBtn && form && loadingMessage) {
+          submitBtn.addEventListener('click', function(event) {
+            // Prevent the default form submission to show the loading message
+            event.preventDefault();
+            // Show the loading message
+            loadingMessage.style.display = 'block';
+            // Disable the submit button to prevent multiple submissions
+            submitBtn.disabled = true;
+            // Now submit the form
+            form.submit();
+          });
+        }
+      });
+    </script>
+  </body>
+  <script src="static\download-mobile\js\download-mobile.js"></script>
+</html>

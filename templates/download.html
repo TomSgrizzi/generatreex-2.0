@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='download/css/globals.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='download/css/styleguide.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='download/css/style.css') }}" />
+  </head>
+  <body>
+    <div class="element">
+      <div class="div">
+        <div class="overlap">
+          <div class="element-CTA">
+            <div class="overlap-group">
+              <div class="frame">
+                <div class="always-track-analy-wrapper">
+                  <p class="always-track-analy">
+                    <span class="text-wrapper">Genera</span><span class="span">treeX</span>
+                  </p>
+                </div>
+                <div class="group">
+                  <div class="div-wrapper">
+                    <div class="white-normal">
+                      <form action="/submit" method="post" id="myForm">
+                        <input type="text" class="sign-up" name="structure" placeholder="e.g. [TP [DP] [T’ [T] [vP [DP2] [VP]]]]"/>
+                        <select name="movement_lines" class="dropdown-parent">
+                          <option value="0" selected>0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <!-- Add more options as needed -->
+                        </select>
+                        <div class="sign-up-wrapper"><input type="text" class="sign-up-fromnodes" name="from_nodes" placeholder="Enter node labels..."/></div>
+                        <div class="overlap-2"><input type="text" class="sign-up-tonodes" name="to_nodes" placeholder="Enter node labels..."/></div>
+                        <div class="overlap-3"><input type="text" class="sign-up-directionout" name="direction_out" placeholder="Enter directions..."/><div class="sign-up-4"></div></div>
+                        <div class="overlap-4"><input type="text" class="sign-up-directionin" name="direction_in" placeholder="Enter directions..."/><div class="sign-up-4"></div></div>
+                        <button type="submit" class="black-normal-3" id="submitBtn">
+                          <div class="sign-up-9">Submit</div>
+                        </button>
+                        <div class="group-4">
+                          <div class="black-normal-2"><button type="button" class="sign-up-autofill" onclick="autofill()">Autofill</button></div>
+                        </div>
+                      </form>
+                    </div>
+                    <div id="loadingMessage" style="display: none;">Loading...</div> 
+                  </div>
+                </div>
+                <div class="sign-up-2">Enter your structure:</div>
+                <p class="p">How many movement lines do you want to draw?</p>
+                <div class="sign-up-3">From:</div>
+                <div class="sign-up-5">To:</div>
+                <div class="sign-up-6">Output direction:</div>
+                
+                <div class="sign-up-7">Input direction:</div>
+                
+                <div class="overlap-group-2">
+                  <div class="group-2">
+                    <div class="group-wrapper">
+                      <div class="div-wrapper">
+                        <div class="black-normal"><a href="{{ url_for('get_png') }}"><div class="sign-up-8">Download png</div></div>
+                      </div>
+                    </div>
+                    <div class="black-normal-wrapper">
+                      <div class="black-normal-2"><a href="{{ url_for('get_pdf') }}"><div class="sign-up-9">Download pdf</div></div></a>
+                    </div>
+                    <div class="a-better-way-to-mana">🎉 Done! 🎉</div>
+                  </div>
+                  <div class="group-3">
+                    <a href="{{ url_for('show_latex') }}" target="_blank" class="black-normal">
+                      <div class="sign-up-8">Show LaTeX code</div>
+                  </a>
+                  </div>
+                </div>
+                
+              </div>
+              <p class="a-better-way-to-mana-2">A quick way to generate syntactic trees from in-line notation ✨</p>
+            </div>
+          </div>
+          <div class="rectangle"></div>
+        </div>
+        <div class="overlap-5">
+          <a href="https://tomsgrizzi.github.io/"><img class="github-logo" src="{{ url_for('static', filename='download/img/github-logo-1.png') }}" /></a>
+          <header class="header">
+            <div class="menu">
+              <div class="white-normal-2"><a href="https://tomsgrizzi.github.io/"><div class="sign-up-10">by Tommaso Sgrizzi</div></div></a>
+            </div>
+          </header>
+          <div class="black-normal-4"><div class="sign-up-11">Guide</div></div>
+        </div>
+       
+      </div>
+    </div>
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+        var submitBtn = document.getElementById('submitBtn');
+        var form = document.getElementById('myForm');
+        var loadingMessage = document.getElementById('loadingMessage');
+      
+        if (submitBtn && form && loadingMessage) {
+          submitBtn.addEventListener('click', function(event) {
+            // Prevent the default form submission to show the loading message
+            event.preventDefault();
+            // Show the loading message
+            loadingMessage.style.display = 'block';
+            // Disable the submit button to prevent multiple submissions
+            submitBtn.disabled = true;
+            // Now submit the form
+            form.submit();
+          });
+        }
+      });
+    </script>
+  </body>
+  <script src="static\download\js\download.js"></script>
+</html>

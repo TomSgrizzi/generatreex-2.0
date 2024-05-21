@@ -1,0 +1,1313 @@
+html, body {
+  height: 100%; /* Ensure at least the min-height covers the full viewport height */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #f0f0f0; /* Your desired background color */
+}
+
+
+.iphone {
+  position: relative;
+  width: 100%;
+  height: auto; /* Allow the height to adjust based on content */
+  overflow-y: auto; /* Allow vertical scrolling if content exceeds height */
+}
+
+
+.iphone.iphone-wrapper {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensure children are spaced properly */
+  margin: 0;
+  padding: 0;
+}
+
+.iphone .sign-up-wrapper {
+  width: calc(200% - 150px); /* Subtract button width and paddings */
+  height: 100%; /* Match height of the container */
+  margin: 0;
+  padding: 0 10.62px; /* Apply appropriate padding */
+  box-sizing: border-box; /* Ensure padding is included in the total width */
+  opacity: 0.5;
+  font-style: italic;
+  color: #151515;
+  font-size: 10px;
+  line-height: 15.9px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+.iphone .div {
+  background-color: #f0f0f0;
+  overflow: hidden;
+  width: 390px;
+  height: 844px;
+  position: relative;
+}
+
+.iphone .overlap {
+  position: absolute;
+  width: 888px;
+  height: 35px;
+  top: 25px;
+  left: 23px;
+}
+
+.iphone .github-logo {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  top: 3px;
+  left: 0;
+  object-fit: cover;
+}
+
+.iphone .header {
+  position: absolute;
+  width: 874px;
+  height: 35px;
+  top: 0;
+  left: 14px;
+  background-color: transparent;
+}
+
+.iphone .menu {
+  display: flex;
+  width: 254px;
+  height: 35px;
+  align-items: flex-start;
+  gap: 10.37px;
+  position: relative;
+}
+
+.iphone .white-normal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5.18px;
+  padding: 7.26px 10.37px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.iphone .sign-up {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.52px;
+  color: #151515;
+  font-size: 9.3px;
+  text-align: center;
+  line-height: 12.4px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.iphone .black-normal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5.37px;
+  padding: 7.52px 10.74px;
+  position: absolute;
+  top: 0;
+  left: 299px;
+  background-color: #151515;
+  border-radius: 7.62px;
+}
+
+.iphone .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.54px;
+  color: #ffffff;
+  font-size: 9.7px;
+  text-align: center;
+  line-height: 12.9px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.iphone .overlap-group {
+  position: absolute;
+  width: 436px;
+  height: 311px;
+  top: 120px;
+  left: 23px;
+}
+
+.iphone .frame {
+  width: 436px;
+  height: 311px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.iphone .always-track-analy-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9.04px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.iphone .always-track-analy {
+  position: relative;
+  width: 499.73px;
+  height: 51.96px;
+  margin-top: -0.45px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #151515;
+  font-size: 57.8px;
+  letter-spacing: -1.81px;
+  line-height: 36.1px;
+}
+
+.iphone .span {
+  letter-spacing: -1.05px;
+}
+
+.iphone .text-wrapper-2 {
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: -1.05px;
+}
+
+.iphone .group {
+  position: absolute;
+  width: 215px;
+  height: 24px;
+  top: 99px;
+  left: 0;
+}
+
+.iphone .white-normal-wrapper {
+  height: 24px;
+}
+
+
+
+.iphone .p {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.45px;
+  opacity: 0.5;
+  font-style: italic;
+  color: #151515;
+  font-size: 8.1px;
+  line-height: 10.8px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.iphone .sign-up-2 {
+  position: absolute;
+  top: 85px;
+  left: 0;
+  font-style: italic;
+  color: #000000;
+  font-size: 8.1px;
+  text-align: center;
+  line-height: 10.8px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.iphone .sign-up-3 {
+  position: absolute;
+  top: 142px;
+  left: 0;
+  font-style: italic;
+  color: #000000;
+  font-size: 8.1px;
+  text-align: center;
+  line-height: 10.8px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.iphone .sign-up-4 {
+  position: absolute;
+  top: 186px;
+  left: 1px;
+  font-style: italic;
+  color: #000000;
+  font-size: 8.1px;
+  text-align: center;
+  line-height: 10.8px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.iphone .dropdown-parent {
+  flex-direction: column;
+  width: 30px;
+  position: absolute;
+  top: 55px;
+  left: 0;
+  display: flex;
+  font-size: 10px;
+  align-items: flex-start;
+}
+
+.iphone .dropdown-selection {
+  height: 14.46px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  font-size: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.iphone .joined-text-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.61px 5.42px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  margin-top: -0.45px;
+  margin-bottom: -0.22px;
+  margin-left: -0.45px;
+  margin-right: -0.45px;
+  background-color: var(--white);
+  border-radius: 3.61px;
+  border: 0.45px solid;
+  border-color: #000000;
+}
+
+.iphone .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  font-family: "Nunito", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 5.4px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.iphone .down-arrow-states {
+  position: relative;
+  width: 6.21px;
+  height: 3.52px;
+}
+
+.iphone .div-wrapper {
+  position: absolute;
+  width: 86px; /* Width of the container */
+  height: 23px; /* Height of the container */
+  top: 100px;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.iphone .sign-up-fromnodes {
+  width: 100%; /* Make the input field take the full width of the container */
+  height: 100%; /* Make the input field take the full height of the container */
+  margin: 0;
+  padding: 0 10.62px; /* Apply padding as needed */
+  box-sizing: border-box; /* Ensure padding is included in the total width */
+  opacity: 0.5;
+  font-style: italic;
+  color: #151515;
+  font-size: 9px;
+  line-height: 15.9px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+
+.iphone .sign-up-5 {
+  position: absolute;
+  top: 5px;
+  left: 6px;
+  opacity: 0.5;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  font-style: italic;
+  color: #151515;
+  font-size: 8.1px;
+  letter-spacing: 0;
+  line-height: 10.8px;
+  white-space: nowrap;
+}
+
+.iphone .sign-up-6 {
+  position: absolute;
+  top: 186px;
+  left: 104px;
+  font-style: italic;
+  color: #000000;
+  font-size: 8.1px;
+  text-align: center;
+  line-height: 10.8px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+#loadingMessage {
+  color: red;
+  /* Add more styling as needed */
+  /* Ensure the list has no default browser styling that affects position */
+  padding: 0;
+  margin: 0;
+  top: 900px;
+  font-style: italic;
+  font-family: "Roboto", Helvetica;
+  font-size: 10px;
+  font-weight: 200;
+  list-style-type: none;
+}
+
+
+.flashes-container {
+  position: absolute;
+  top: 200px; /* Adjust the position as needed */
+  left: 73%; /* Center it horizontally; adjust as needed */
+  transform: translateX(-50%); /* Center it horizontally with respect to its own width */
+  width: 100%; /* Set the width as needed */
+  text-align: center; /* Center the text inside the container */
+  z-index: 10; /* Ensure it's above other elements */
+}
+
+.flashes {
+  color: red;
+  /* Add more styling as needed */
+  /* Ensure the list has no default browser styling that affects position */
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", Helvetica;
+  font-size: 10px;
+  font-weight: 200;
+  list-style-type: none;
+}
+
+
+.iphone .overlap-group-2 {
+  position: absolute;
+  width: 86px;
+  height: 23px;
+  top: 145px;
+  left: 104px;
+  background-color: #ffffff;
+}
+
+.iphone .sign-up-directionin {
+  width: 100%; /* Make the input field take the full width of the container */
+  height: 100%; /* Make the input field take the full height of the container */
+  margin: 0;
+  padding: 0 10.62px; /* Apply padding as needed */
+  box-sizing: border-box; /* Ensure padding is included in the total width */
+  opacity: 0.5;
+  font-style: italic;
+  color: #151515;
+  font-size: 9px;
+  line-height: 15.9px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.iphone .sign-up-7 {
+  position: absolute;
+  top: 230px;
+  left: 1px;
+  font-style: italic;
+  color: #000000;
+  font-size: 8.1px;
+  text-align: center;
+  line-height: 10.8px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.iphone .overlap-2 {
+  position: absolute;
+  width: 86px;
+  height: 23px;
+  top: 100px;
+  left: 103px;
+  background-color: #ffffff;
+}
+
+.iphone .sign-up-to-nodes {
+  width: 100%; /* Make the input field take the full width of the container */
+  height: 100%; /* Make the input field take the full height of the container */
+  margin: 0;
+  padding: 0 10.62px; /* Apply padding as needed */
+  box-sizing: border-box; /* Ensure padding is included in the total width */
+  opacity: 0.5;
+  font-style: italic;
+  color: #151515;
+  font-size: 9px;
+  line-height: 15.9px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.iphone .sign-up-8 {
+  position: absolute;
+  top: 230px;
+  left: 104px;
+  font-style: italic;
+  color: #000000;
+  font-size: 8.1px;
+  text-align: center;
+  line-height: 10.8px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.iphone .overlap-3 {
+  position: absolute;
+  width: 86px;
+  height: 23px;
+  top: 145px;
+  left: 1px;
+  background-color: #ffffff;
+}
+
+.iphone .sign-up-directionout {
+  width: 100%; /* Make the input field take the full width of the container */
+  height: 100%; /* Make the input field take the full height of the container */
+  margin: 0;
+  padding: 0 10.62px; /* Apply padding as needed */
+  box-sizing: border-box; /* Ensure padding is included in the total width */
+  opacity: 0.5;
+  font-style: italic;
+  color: #151515;
+  font-size: 9px;
+  line-height: 15.9px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.iphone .black-normal-wrapper {
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  top: 2px;
+  left: 224px;
+}
+
+.element .sign-up-autofill {
+  /* Existing styles */
+  cursor: pointer; /* This will make the cursor change to a pointer/hand icon */
+}
+
+.iphone .black-normal-2 {
+  gap: 4.52px;
+  padding: 0;
+  position: relative;
+  background-color: #151515;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iphone .sign-up-autofill {
+  position: relative;
+  width: fit-content; /* Make the button content-based width */
+  margin-top: -0.45px;
+  color: #ffffff;
+  font-size: 8.1px;
+  text-align: center;
+  line-height: 10.8px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+  background-color: #151515;
+  padding: 6.33px 9.04px; /* Apply the same padding as the container */
+  box-sizing: border-box; /* Include padding in the total width */
+}
+
+.iphone .sign-up-9 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.45px;
+  color: #ffffff;
+  font-size: 8.1px;
+  text-align: center;
+  line-height: 10.8px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.iphone .black-normal-3 {
+  gap: 5px;
+  padding: 7px 10px;
+  position: absolute;
+  top: 191px;
+  left: 1px;
+  background-color: #b1c87f;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iphone .sign-up-10 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.5px;
+  color: #ffffff;
+  font-size: 9px;
+  text-align: center;
+  line-height: 12px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.iphone .a-better-way-to-mana {
+  position: absolute;
+  width: 324px;
+  top: 48px;
+  left: 5px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  font-style: italic;
+  color: #151515;
+  font-size: 10.8px;
+  letter-spacing: 0;
+  line-height: 11.7px;
+}
+
+.iphone .overlap-4 {
+  position: absolute;
+  width: 537px;
+  height: 53px;
+  top: 715px;
+  left: 59px;
+}
+
+.iphone .group-2 {
+  position: absolute;
+  width: 537px;
+  height: 53px;
+  top: 0;
+  left: 0;
+}
+
+.iphone .group-wrapper {
+  position: absolute;
+  width: 75px;
+  height: 28px;
+  top: 25px;
+  left: 191px;
+}
+
+.iphone .group-3 {
+  height: 28px;
+}
+
+.iphone .black-normal-4 {
+  gap: 5.27px;
+  padding: 7.38px 10.54px;
+  position: relative;
+  background-color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iphone .sign-up-11 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.53px;
+  color: #7d9e3a;
+  font-size: 9.5px;
+  text-align: center;
+  line-height: 12.6px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.iphone .group-4 {
+  position: absolute;
+  width: 80px;
+  height: 28px;
+  top: 25px;
+  left: 0;
+}
+
+.iphone .black-normal-5 {
+  gap: 5.27px;
+  padding: 7.38px 10.54px;
+  position: relative;
+  background-color: #151515;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iphone .sign-up-12 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.53px;
+  color: #ffffff;
+  font-size: 9.5px;
+  text-align: center;
+  line-height: 12.6px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.iphone .a-better-way-to-mana-2 {
+  position: absolute;
+  width: 429px;
+  top: 0;
+  left: 106px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #151515;
+  font-size: 12.6px;
+  letter-spacing: 0;
+  line-height: 13.7px;
+}
+
+.iphone .black-normal-6 {
+  gap: 5.21px;
+  padding: 7.29px 10.42px;
+  position: absolute;
+  top: 25px;
+  left: 88px;
+  background-color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iphone .sign-up-13 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.52px;
+  color: #7d9e3a;
+  font-size: 9.4px;
+  text-align: center;
+  line-height: 12.5px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.iphone .rectangle {
+  position: relative;
+  width: 318px;
+  height: 283px;
+  top: 400px;
+  left: 100px;
+  background-image: url('output-1.png'); /* Path to your generated PNG image */
+  background-size: cover; /* Ensure the image covers the rectangle */
+  background-position: center; /* Center the image within the element */
+  z-index: 1; /* Lower z-index to place this element behind others */
+}
+
+
+.iphone.element-wrapper {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.iphone .element {
+  background-color: #f0f0f0;
+  width: 1921px;
+  height: 1084px;
+  position: relative;
+}
+
+.iphone .overlap-5 {
+  position: absolute;
+  width: 1369px;
+  height: 714px;
+  top: 209px;
+  left: 375px;
+}
+
+.iphone .element-CTA {
+  position: absolute;
+  width: 966px;
+  height: 688px;
+  top: 26px;
+  left: 0;
+}
+
+.iphone .overlap-6 {
+  position: relative;
+  width: 964px;
+  height: 688px;
+}
+
+.iphone .frame-2 {
+  position: absolute;
+  width: 964px;
+  height: 688px;
+  top: 0;
+  left: 0;
+}
+
+.iphone .frame-3 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.iphone .always-track-analy-2 {
+  position: relative;
+  width: 1106px;
+  height: 115px;
+  margin-top: -1px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #151515;
+  font-size: 128px;
+  letter-spacing: -4px;
+  line-height: 80px;
+}
+
+.iphone .text-wrapper-4 {
+  letter-spacing: -5.12px;
+}
+
+.iphone .text-wrapper-5 {
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: -5.12px;
+}
+
+.iphone .group-5 {
+  width: 476px;
+  top: 219px;
+  left: 0;
+  position: absolute;
+  height: 52px;
+}
+
+.iphone .group-6 {
+  height: 52px;
+}
+
+.iphone .white-normal-2 {
+  padding: 14px 193px 14px 16px;
+  background-color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+
+.iphone .sign-up-14 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  opacity: 0.5;
+  font-style: italic;
+  color: #151515;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.iphone .sign-up-15 {
+  position: absolute;
+  top: 189px;
+  left: 0;
+  font-style: italic;
+  color: #000000;
+  font-size: 18px;
+  text-align: center;
+  line-height: 24px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.iphone .sign-up-16 {
+  position: absolute;
+  top: 314px;
+  left: 0;
+  font-style: italic;
+  color: #000000;
+  font-size: 18px;
+  text-align: center;
+  line-height: 24px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.iphone .sign-up-17 {
+  position: absolute;
+  top: 412px;
+  left: 2px;
+  font-style: italic;
+  color: #000000;
+  font-size: 18px;
+  text-align: center;
+  line-height: 24px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.iphone .dropdown-parent-2 {
+  display: flex;
+  flex-direction: column;
+  width: 66px;
+  align-items: flex-start;
+  position: absolute;
+  top: 343px;
+  left: 0;
+}
+
+.iphone .joined-text-arrow-wrapper {
+  display: flex;
+  height: 32px;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.iphone .joined-text-arrow-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  margin-left: -1px;
+  margin-right: -1px;
+  background-color: var(--white);
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.iphone .dropdown-parent-3 {
+  position: relative;
+  width: fit-content;
+  font-family: "Nunito", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.iphone .img {
+  position: relative;
+  width: 13.75px;
+  height: 7.81px;
+}
+
+.iphone .overlap-7 {
+  position: absolute;
+  width: 168px;
+  height: 52px;
+  top: 441px;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.iphone .sign-up-18 {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  opacity: 0.5;
+  font-style: italic;
+  color: #151515;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.iphone .sign-up-19 {
+  position: absolute;
+  top: 412px;
+  left: 230px;
+  font-style: italic;
+  color: #000000;
+  font-size: 18px;
+  text-align: center;
+  line-height: 24px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.iphone .overlap-8 {
+  position: absolute;
+  width: 168px;
+  height: 52px;
+  top: 441px;
+  left: 228px;
+  background-color: #ffffff;
+}
+
+.iphone .sign-up-20 {
+  position: absolute;
+  top: 510px;
+  left: 2px;
+  font-style: italic;
+  color: #000000;
+  font-size: 18px;
+  text-align: center;
+  line-height: 24px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.iphone .overlap-9 {
+  position: absolute;
+  width: 168px;
+  height: 52px;
+  top: 539px;
+  left: 2px;
+  background-color: #ffffff;
+}
+
+.iphone .sign-up-21 {
+  position: absolute;
+  top: 510px;
+  left: 230px;
+  font-style: italic;
+  color: #000000;
+  font-size: 18px;
+  text-align: center;
+  line-height: 24px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.iphone .overlap-10 {
+  position: absolute;
+  width: 168px;
+  height: 52px;
+  top: 539px;
+  left: 230px;
+  background-color: #ffffff;
+}
+
+.iphone .overlap-group-3 {
+  position: absolute;
+  width: 816px;
+  height: 99px;
+  top: 575px;
+  left: 743px;
+}
+
+.iphone .group-7 {
+  position: absolute;
+  width: 816px;
+  height: 99px;
+  top: 0;
+  left: 0;
+}
+
+.iphone .group-8 {
+  position: absolute;
+  width: 142px;
+  height: 52px;
+  top: 47px;
+  left: 367px;
+}
+
+.iphone .black-normal-7 {
+  gap: 10px;
+  padding: 14px 20px;
+  position: relative;
+  background-color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iphone .sign-up-22 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  color: #7d9e3a;
+  font-size: 18px;
+  text-align: center;
+  line-height: 24px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.iphone .group-9 {
+  position: absolute;
+  width: 152px;
+  height: 52px;
+  cursor: pointer;
+  top: 360px;
+  left: 0;
+}
+
+.iphone .black-normal-8 {
+  gap: 10px;
+  padding: 14px 20px;
+  position: relative;
+  cursor: pointer;
+  background-color: #151515;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iphone .sign-up-23 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 24px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.iphone .a-better-way-to-mana-3 {
+  width: 814px;
+  top: 50px;
+  left: 0;
+  position: absolute;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #151515;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 26px;
+}
+
+.iphone .group-10 {
+  width: 183px;
+  top: 47px;
+  left: 169px;
+  position: absolute;
+  height: 52px;
+}
+
+.iphone .group-11 {
+  position: absolute;
+  width: 97px;
+  height: 52px;
+  top: 219px;
+  left: 495px;
+}
+
+.iphone .a-better-way-to-mana-4 {
+  width: 716px;
+  top: 109px;
+  left: 10px;
+  font-style: italic;
+  position: absolute;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #151515;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 26px;
+}
+
+.iphone .black-normal-9 {
+  gap: 10px;
+  padding: 14px 20px;
+  position: absolute;
+  top: 662px;
+  left: 0;
+  background-color: #b1c87f;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iphone .rectangle-2 {
+  position: absolute;
+  width: 630px;
+  height: 577px;
+  z-index:1;
+  top: 0;
+  left: 739px;
+  background-color: #d9d9d9;
+}
+
+.iphone .overlap-11 {
+  position: absolute;
+  width: 1736px;
+  height: 74px;
+  top: 68px;
+  left: 132px;
+}
+
+.iphone .github-logo-2 {
+  position: absolute;
+  width: 59px;
+  height: 59px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.iphone .header-2 {
+  position: absolute;
+  width: 1685px;
+  height: 68px;
+  top: 6px;
+  left: 51px;
+  background-color: transparent;
+}
+
+.iphone .menu-2 {
+  display: flex;
+  width: 490px;
+  height: 68px;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+}
+
+.iphone .white-normal-3 {
+  padding: 14px 20px;
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+
+.iphone .sign-up-24 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  color: #151515;
+  font-size: 18px;
+  text-align: center;
+  line-height: 24px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.iphone .black-normal-10 {
+  gap: 10.86px;
+  padding: 15.2px 21.72px;
+  position: absolute;
+  top: 11px;
+  left: 1574px;
+  background-color: #151515;
+  border-radius: 15.4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iphone .sign-up-25 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.09px;
+  color: #ffffff;
+  font-size: 19.5px;
+  text-align: center;
+  line-height: 26.1px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+@media (max-width: 1920px) {
+  .iphone.element-wrapper {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1921px) {
+  .iphone.iphone-wrapper {
+    display: none !important;
+  }
+}

@@ -1,0 +1,6 @@
+:root {
+  --white: rgba(255, 255, 255, 1);
+  --mid-gray: rgba(206, 205, 205, 1);
+  --light-gray: rgba(241, 241, 241, 1);
+  --accent: rgba(220, 235, 201, 1);
+}

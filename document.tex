@@ -1,0 +1,14 @@
+
+        \documentclass{standalone}
+        \usepackage{tikz}
+        \usepackage{amsmath}
+        \usepackage{forest}
+
+        \begin{document}
+        \begin{forest}
+            for tree={calign=fixed edge angles},
+            [CP,name=CP [DP,name=DP [What,name=What]] [C',name=C' [C,name=C [does,name=does]] [TP,name=TP [DP1,name=DP1 [this GeneraTreeX,name=this GeneraTreeX]] [T',name=T' [T,name=T] [VP,name=VP [DP2,name=DP2] [V',name=V' [V,name=V [do,name=do]][DP3,name=DP3]]]]]]]
+            \draw[->,dotted] (DP3) to[out=east,in= north]( DP);\draw[->,dotted] (T) to[out=south,in= west]( does);\draw[->,dotted] (DP2) to[out=west,in= south]( DP1);
+        \end{forest}
+        \end{document}
+        

@@ -1,0 +1,697 @@
+html, body {
+  height: 100%; /* Ensure at least the min-height covers the full viewport height */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #f0f0f0; /* Your desired background color */
+}
+
+#loadingMessage {
+  color: red;
+  /* Add more styling as needed */
+  /* Ensure the list has no default browser styling that affects position */
+  padding: 0;
+  margin: 0;
+  top: 900px;
+  font-style: italic;
+  font-family: "Roboto", Helvetica;
+  font-size: small;
+  font-weight: 200;
+  list-style-type: none;
+}
+
+
+.element {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.element .sign-up-autofill {
+  /* Existing styles */
+  cursor: pointer; /* This will make the cursor change to a pointer/hand icon */
+}
+
+
+
+.element .div {
+  background-color: #f0f0f0;
+  width: 1275px;
+  height: 719.47px;
+  position: relative;
+}
+
+.element .overlap {
+  position: absolute;
+  width: 909px;
+  height: 474px;
+  top: 139px;
+  left: 249px;
+}
+
+.element .element-CTA {
+  position: absolute;
+  width: 642px;
+  height: 456px;
+  top: 17px;
+  left: 0;
+}
+
+.element .overlap-group {
+  position: relative;
+  width: 640px;
+  height: 456px;
+}
+
+.element .frame {
+  width: 640px;
+  height: 456px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.element .always-track-analy-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 13.27px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.element .always-track-analy {
+  position: relative;
+  width: 734.07px;
+  height: 76.33px;
+  margin-top: -0.66px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #151515;
+  font-size: 85px;
+  letter-spacing: -2.65px;
+  line-height: 53.1px;
+}
+
+.element .text-wrapper {
+  letter-spacing: -2.26px;
+}
+
+.element .span {
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: -2.26px;
+}
+
+.element .group {
+  position: absolute;
+  width: 316px;
+  height: 35px;
+  top: 145px;
+  left: 0;
+}
+
+.element .div-wrapper {
+  height: 35px;
+}
+
+.element .white-normal {
+  padding: 0; /* Remove padding from the container */
+  background-color: #ffffff;
+  display: flex; /* Use flex instead of inline-flex */
+  align-items: center;
+  justify-content: center;
+  gap: 6.64px;
+  position: relative;
+  width: 100%; /* Ensure it takes the full width of the wrapper */
+  height: 100%; /* Ensure it takes the full height of the wrapper */
+}
+
+.element .sign-up {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.66px;
+  opacity: 0.5;
+  font-style: italic;
+  color: #151515;
+  font-size: 11.9px;
+  line-height: 15.9px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.element .sign-up-2 {
+  position: absolute;
+  top: 125px;
+  left: 0;
+  font-style: italic;
+  color: #000000;
+  font-size: 11.9px;
+  text-align: center;
+  line-height: 15.9px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  outline: none;
+  white-space: nowrap;
+}
+
+.element .p {
+  position: absolute;
+  top: 208px;
+  left: 0;
+  font-style: italic;
+  color: #000000;
+  font-size: 11.9px;
+  text-align: center;
+  line-height: 15.9px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.element .sign-up-3 {
+  position: absolute;
+  top: 273px;
+  left: 1px;
+  font-style: italic;
+  color: #000000;
+  font-size: 11.9px;
+  text-align: center;
+  line-height: 15.9px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.element .dropdown-parent {
+  flex-direction: column;
+  width: 44px;
+  position: absolute;
+  top: 82px;
+  left: 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+.element .dropdown-selection {
+  height: 21.24px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.element .joined-text-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5.31px 7.96px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  margin-top: -0.66px;
+  margin-bottom: -1.04px;
+  margin-left: -0.66px;
+  margin-right: -0.66px;
+  background-color: var(--white);
+  border-radius: 5.31px;
+  border: 0.66px solid;
+  border-color: #000000;
+}
+
+.element .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  font-family: "Nunito-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 8px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.element .down-arrow-states {
+  position: relative;
+  width: 9.13px;
+  height: 5.19px;
+}
+
+.element .sign-up-wrapper {
+  position: absolute;
+  width: 112px;
+  height: 35px;
+  top: 148px;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.element .sign-up-fromnodes {
+  width: calc(235% - 150px); /* Subtract button width and paddings */
+  height: 100%; /* Match height of the container */
+  margin: 0;
+  padding: 0 10.62px; /* Apply appropriate padding */
+  box-sizing: border-box; /* Ensure padding is included in the total width */
+  opacity: 0.5;
+  font-style: italic;
+  color: #151515;
+  font-size: 11.9px;
+  line-height: 15.9px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.element .overlap-2 {
+  position: absolute;
+  width: 112px;
+  height: 35px;
+  top: 148px;
+  left: 151px;
+  background-color: #ffffff;
+}
+
+.element .sign-up-tonodes {
+  width: calc(235% - 150px); /* Subtract button width and paddings */
+  height: 100%; /* Match height of the container */
+  margin: 0;
+  padding: 0 10.62px; /* Apply appropriate padding */
+  box-sizing: border-box; /* Ensure padding is included in the total width */
+  opacity: 0.5;
+  font-style: italic;
+  color: #151515;
+  font-size: 11.9px;
+  line-height: 15.9px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.element .overlap-3 {
+  position: absolute;
+  width: 112px;
+  height: 35px;
+  top: 212px;
+  left: 1px;
+  background-color: #ffffff;
+}
+
+.element .sign-up-directionout {
+  width: calc(235% - 150px); /* Subtract button width and paddings */
+  height: 100%; /* Match height of the container */
+  margin: 0;
+  padding: 0 10.62px; /* Apply appropriate padding */
+  box-sizing: border-box; /* Ensure padding is included in the total width */
+  opacity: 0.5;
+  font-style: italic;
+  color: #151515;
+  font-size: 11.9px;
+  line-height: 15.9px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.element .overlap-4 {
+  position: absolute;
+  width: 112px;
+  height: 35px;
+  top: 212px;
+  left: 153px;
+  background-color: #ffffff;
+}
+
+.element .sign-up-directionin {
+  width: calc(235% - 150px); /* Subtract button width and paddings */
+  height: 100%; /* Match height of the container */
+  margin: 0;
+  padding: 0 10.62px; /* Apply appropriate padding */
+  box-sizing: border-box; /* Ensure padding is included in the total width */
+  opacity: 0.5;
+  font-style: italic;
+  color: #151515;
+  font-size: 11.9px;
+  line-height: 15.9px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.element .sign-up-4 {
+  position: absolute;
+  top: 8px;
+  left: 9px;
+  opacity: 0.5;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  font-style: italic;
+  color: #151515;
+  font-size: 11.9px;
+  letter-spacing: 0;
+  line-height: 15.9px;
+  white-space: nowrap;
+}
+
+.element .sign-up-5 {
+  position: absolute;
+  top: 273px;
+  left: 153px;
+  font-style: italic;
+  color: #000000;
+  font-size: 11.9px;
+  text-align: center;
+  line-height: 15.9px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+
+
+.element .sign-up-6 {
+  position: absolute;
+  top: 338px;
+  left: 1px;
+  font-style: italic;
+  color: #000000;
+  font-size: 11.9px;
+  text-align: center;
+  line-height: 15.9px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+
+
+.element .sign-up-7 {
+  position: absolute;
+  top: 338px;
+  left: 153px;
+  font-style: italic;
+  color: #000000;
+  font-size: 11.9px;
+  text-align: center;
+  line-height: 15.9px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+
+.element .overlap-group-2 {
+  position: absolute;
+  width: 542px;
+  height: 66px;
+  top: 382px;
+  left: 493px;
+}
+
+.element .group-2 {
+  position: absolute;
+  width: 542px;
+  height: 66px;
+  top: 0;
+  left: 0;
+}
+
+.element .group-wrapper {
+  position: absolute;
+  width: 95px;
+  height: 35px;
+  top: 31px;
+  left: 244px;
+}
+
+.element .black-normal {
+  gap: 6.64px;
+  padding: 9.29px 13.27px;
+  position: relative;
+  background-color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.element .sign-up-8 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.66px;
+  font-family: "Roboto-Regular", Helvetica;
+  color: #7d9e3a;
+  font-size: 11.9px;
+  text-align: center;
+  line-height: 15.9px;
+  outline: none;
+  cursor: pointer;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.element .black-normal-wrapper {
+  width: 101px;
+  top: 31px;
+  left: 0;
+  position: absolute;
+  height: 35px;
+}
+
+.element .black-normal-2 {
+  gap: 6.64px;
+  outline: none;
+  padding: 9.29px 13.27px;
+  cursor: pointer;
+  position: relative;
+  background-color: #151515;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.element .sign-up-autofill {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.66px;
+  color: #ffffff;
+  font-size: 11.9px;
+  text-align: center;
+  line-height: 15.9px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+  border:none;
+  background-color: #151515;
+}
+
+.element .sign-up-9 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.66px;
+  color: #ffffff;
+  font-size: 11.9px;
+  text-align: center;
+  line-height: 15.9px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.element .a-better-way-to-mana {
+  position: absolute;
+  width: 475px;
+  top: 0px;
+  left: 7px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  font-style: italic;
+  color: #151515;
+  font-size: 15.9px;
+  letter-spacing: 0;
+  line-height: 17.3px;
+}
+
+.element .group-3 {
+  position: absolute;
+  width: 122px;
+  height: 35px;
+  top: 31px;
+  left: 112px;
+}
+
+.element .group-4 {
+  width: 65px;
+  top: 0px;
+  left: 329px;
+  position: absolute;
+  height: 35px;
+}
+
+.element .a-better-way-to-mana-2 {
+  position: absolute;
+  width: 475px;
+  top: 72px;
+  left: 7px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  font-style: italic;
+  color: #151515;
+  font-size: 15.9px;
+  letter-spacing: 0;
+  line-height: 17.3px;
+}
+
+.element .black-normal-3 {
+  gap: 6.64px;
+  padding: 9.29px 13.27px;
+  position: absolute;
+  top: 268px;
+  left: 0;
+  background-color: #b1c87f;
+  display: inline-flex;
+  align-items: center;
+  outline: none;
+  cursor: pointer;
+  justify-content: center;
+}
+
+form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensure children are spaced properly */
+  margin: 0;
+  padding: 0;
+}
+
+.element .sign-up {
+  width: calc(200% - 150px); /* Subtract button width and paddings */
+  height: 100%; /* Match height of the container */
+  margin: 0;
+  padding: 0 10.62px; /* Apply appropriate padding */
+  box-sizing: border-box; /* Ensure padding is included in the total width */
+  opacity: 0.5;
+  font-style: italic;
+  color: #151515;
+  font-size: 11.9px;
+  line-height: 15.9px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.element .rectangle {
+  position: absolute;
+  width: 418px; /* Set to the width of your image */
+  height: 383px; /* Set to the height of your image */
+  top: 0;
+  left: 490px;
+  background-image: url('output-1.png'); /* Path to your generated PNG image */
+  /* This will ensure the image covers the rectangle */
+  background-position: center; /* Center the image within the element */
+}
+
+.element .overlap-5 {
+  position: absolute;
+  width: 1152px;
+  height: 49px;
+  top: 45px;
+  left: 88px;
+}
+
+.element .github-logo {
+  position: absolute;
+  width: 39px;
+  height: 39px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.element .header {
+  position: absolute;
+  width: 1118px;
+  height: 45px;
+  top: 4px;
+  left: 34px;
+  background-color: transparent;
+}
+
+.element .menu {
+  display: flex;
+  width: 325px;
+  height: 45px;
+  align-items: flex-start;
+  gap: 13.27px;
+  position: relative;
+}
+
+.element .white-normal-2 {
+  padding: 9.29px 13.27px;
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6.64px;
+  position: relative;
+}
+
+.element .sign-up-10 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.66px;
+  color: #151515;
+  font-size: 11.9px;
+  text-align: center;
+  line-height: 15.9px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.element .black-normal-4 {
+  gap: 7.21px;
+  padding: 10.09px 14.42px;
+  position: absolute;
+  top: 7px;
+  left: 1045px;
+  background-color: #151515;
+  border-radius: 10.22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.element .sign-up-11 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.72px;
+  color: #ffffff;
+  font-size: 13px;
+  text-align: center;
+  line-height: 17.3px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
