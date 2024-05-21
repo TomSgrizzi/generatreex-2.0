@@ -14,7 +14,7 @@ app = Flask(__name__)  # Make sure to use __name__ instead of name
 
 # You need to set a secret key to use sessions
 app.secret_key = os.environ.get('SECRET_KEY', 'default_key')
-app.config['DEBUG'] = True
+app.config['DEBUG'] = False
 
 @app.route('/')
 def index():
