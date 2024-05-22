@@ -34,109 +34,116 @@
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
-                        <!-- Add more options as needed -->
                       </select>
-                      <div class="sign-up-wrapper"><input type="text" class="sign-up-fromnodes" name="from_nodes" placeholder="Enter node labels..."/></div>
-                      <div class="div-wrapper"><input type="text" class="sign-up-tonodes" name="to_nodes" placeholder="Enter node labels..."/></div>
-                      <div class="overlap-group-2"><input type="text" class="sign-up-directionout" name="direction_out" placeholder="Enter directions..."/></div>
-                      <div class="overlap-2"><input type="text" class="sign-up-directionin" name="direction_in" placeholder="Enter directions..."/></div>
+                      <div class="sign-up-wrapper">
+                        <input type="text" class="sign-up-fromnodes" name="from_nodes" placeholder="Enter node labels..."/>
+                      </div>
+                      <div class="div-wrapper">
+                        <input type="text" class="sign-up-tonodes" name="to_nodes" placeholder="Enter node labels..."/>
+                      </div>
+                      <div class="overlap-group-2">
+                        <input type="text" class="sign-up-directionout" name="direction_out" placeholder="Enter directions..."/>
+                      </div>
+                      <div class="overlap-2">
+                        <input type="text" class="sign-up-directionin" name="direction_in" placeholder="Enter directions..."/>
+                      </div>
                       <div class="flashes-container">
                         {% with messages = get_flashed_messages(category_filter=["error_empty_structure"]) %}
                           {% if messages %}
                             <ul class="flashes">
-                            {% for message in messages %}
-                              <li>{{ message }}</li>
-                            {% endfor %}
+                              {% for message in messages %}
+                                <li>{{ message }}</li>
+                              {% endfor %}
                             </ul>
                           {% endif %}
                         {% endwith %}
                         {% with messages = get_flashed_messages(category_filter=["error_squared_beginning"]) %}
                           {% if messages %}
                             <ul class="flashes">
-                            {% for message in messages %}
-                              <li>{{ message }}</li>
-                            {% endfor %}
+                              {% for message in messages %}
+                                <li>{{ message }}</li>
+                              {% endfor %}
                             </ul>
                           {% endif %}
                         {% endwith %}
                         {% with messages = get_flashed_messages(category_filter=["error_bracketing"]) %}
                           {% if messages %}
                             <ul class="flashes">
-                            {% for message in messages %}
-                              <li>{{ message }}</li>
-                            {% endfor %}
+                              {% for message in messages %}
+                                <li>{{ message }}</li>
+                              {% endfor %}
                             </ul>
                           {% endif %}
                         {% endwith %}
                         {% with messages = get_flashed_messages(category_filter=["error_probe_goal_count"]) %}
                           {% if messages %}
                             <ul class="flashes">
-                            {% for message in messages %}
-                              <li>{{ message }}</li>
-                            {% endfor %}
+                              {% for message in messages %}
+                                <li>{{ message }}</li>
+                              {% endfor %}
                             </ul>
                           {% endif %}
                         {% endwith %}
                         {% with messages = get_flashed_messages(category_filter=["error_goal_count"]) %}
                           {% if messages %}
                             <ul class="flashes">
-                            {% for message in messages %}
-                              <li>{{ message }}</li>
-                            {% endfor %}
+                              {% for message in messages %}
+                                <li>{{ message }}</li>
+                              {% endfor %}
                             </ul>
                           {% endif %}
                         {% endwith %}
                         {% with messages = get_flashed_messages(category_filter=["error_probe_count"]) %}
                           {% if messages %}
                             <ul class="flashes">
-                            {% for message in messages %}
-                              <li>{{ message }}</li>
-                            {% endfor %}
+                              {% for message in messages %}
+                                <li>{{ message }}</li>
+                              {% endfor %}
                             </ul>
                           {% endif %}
                         {% endwith %}
                         {% with messages = get_flashed_messages(category_filter=["error_direction_count"]) %}
                           {% if messages %}
                             <ul class="flashes">
-                            {% for message in messages %}
-                              <li>{{ message }}</li>
-                            {% endfor %}
+                              {% for message in messages %}
+                                <li>{{ message }}</li>
+                              {% endfor %}
                             </ul>
                           {% endif %}
                         {% endwith %}
                         {% with messages = get_flashed_messages(category_filter=["error_input_count"]) %}
                           {% if messages %}
                             <ul class="flashes">
-                            {% for message in messages %}
-                              <li>{{ message }}</li>
-                            {% endfor %}
+                              {% for message in messages %}
+                                <li>{{ message }}</li>
+                              {% endfor %}
                             </ul>
                           {% endif %}
                         {% endwith %}
                         {% with messages = get_flashed_messages(category_filter=["error_output_count"]) %}
                           {% if messages %}
                             <ul class="flashes">
-                            {% for message in messages %}
-                              <li>{{ message }}</li>
-                            {% endfor %}
+                              {% for message in messages %}
+                                <li>{{ message }}</li>
+                              {% endfor %}
                             </ul>
                           {% endif %}
                         {% endwith %}
                         {% with messages = get_flashed_messages(category_filter=["error_pdf_generation"]) %}
                           {% if messages %}
                             <ul class="flashes">
-                            {% for message in messages %}
-                              <li>{{ message }}</li>
-                            {% endfor %}
+                              {% for message in messages %}
+                                <li>{{ message }}</li>
+                              {% endfor %}
                             </ul>
                           {% endif %}
                         {% endwith %}
                         {% with messages = get_flashed_messages(category_filter=["error_timeout"]) %}
                           {% if messages %}
                             <ul class="flashes">
-                            {% for message in messages %}
-                              <li>{{ message }}</li>
-                            {% endfor %}
+                              {% for message in messages %}
+                                <li>{{ message }}</li>
+                              {% endfor %}
                             </ul>
                           {% endif %}
                         {% endwith %}
@@ -146,12 +153,12 @@
                       </button>
                       
                       <div class="black-normal-wrapper">
-                        <div class="black-normal"><button type="button" class="sign-up-autofill" onclick="autofill()">Autofill</button></div>
+                        <div class="black-normal">
+                          <button type="button" class="sign-up-autofill" onclick="autofill()">Autofill</button>
+                        </div>
                       </div>
-                      </form>
-                      
+                    </form>
                   </div>
-                  
                 </div>
                 <div id="loadingMessage" style="display: none;">Loading...</div>
               </div>
@@ -161,7 +168,6 @@
               <div class="sign-up-5">To:</div>
               <div class="sign-up-6">Output direction:</div>
               <div class="sign-up-7">Input direction:</div>
-              
             </div>
             <p class="a-better-way-to-mana">A quick way to generate syntactic trees from in-line notation ✨</p>
           </div>
@@ -171,41 +177,18 @@
       <div class="overlap-3">
         <a href="https://tomsgrizzi.github.io/"><img class="github-logo" src="{{ url_for('static', filename='index/img/github-logo-1.png') }}" /></a>
         <div class="black-normal-3">
-  <a href="https://github.com/TomSgrizzi/generatreex-2.0/blob/master/README.md" title="Read the Guide on GitHub">
-    <div class="sign-up-9">Guide</div>
-  </a>
-</div>
+          <a href="https://github.com/TomSgrizzi/generatreex-2.0/blob/master/README.md" title="Read the Guide on GitHub">
+            <div class="sign-up-9">Guide</div>
+          </a>
+        </div>
         <header class="header">
           <div class="menu">
-            <div class="white-normal-2"><a href="https://tomsgrizzi.github.io/"><div class="sign-up-10">by Tommaso Sgrizzi</div></a></div>
+            <div class="white-normal-2">
+              <a href="https://tomsgrizzi.github.io/">
+                <div class="sign-up-10">by Tommaso Sgrizzi</div>
+              </a>
+            </div>
           </div>
         </header>
       </div>
     </div>
-  </div>
-  <script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function() {
-      var submitBtn = document.getElementById('submitBtn');
-      var form = document.getElementById('myForm');
-      var loadingMessage = document.getElementById('loadingMessage');
-    
-      if (submitBtn && form && loadingMessage) {
-        submitBtn.addEventListener('click', function(event) {
-          // Prevent the default form submission to show the loading message
-          event.preventDefault();
-          // Show the loading message
-          loadingMessage.style.display = 'block';
-          // Disable the submit button to prevent multiple submissions
-          submitBtn.disabled = true;
-          // Now submit the form
-          form.submit();
-        });
-      }
-    });
-  </script>
-  <script data-goatcounter="https://generatreex.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-</body>
-<script src="static\index\js\index.js"></script>
-</html>
-
